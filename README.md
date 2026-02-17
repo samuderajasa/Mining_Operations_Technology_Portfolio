@@ -14,5 +14,5 @@ The role also supports daily production monitoring and dispatch using Fleet Mana
 # Projects
 | Project Link | Completion Date | Tools | Project Description | 
 |---|---|---|---|
-| [Hourly Production Performance](https://github.com/) | March 2025 | Microsoft SQL Server, Power BI | Visualizes hourly excavator overburden production performance by presenting key metrics such as total production, productivity, working time, loading time, hanging time, spotting time, queueing time, and truck speed. |
+| [Hourly Production Performance](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/tree/master/Hourly_Production_Performance) | March 2025 | Microsoft SQL Server, Power BI | Visualizes hourly excavator overburden production performance by presenting key metrics such as total production, productivity, working time, loading time, hanging time, spotting time, queueing time, and truck speed. |
 
