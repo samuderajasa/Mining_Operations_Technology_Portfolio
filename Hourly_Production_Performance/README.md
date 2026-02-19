@@ -32,7 +32,7 @@ graph LR;
     PowerBIReport --> PowerBIService[Power BI Service];
 ```
 
-## 💾 Microsoft SQL Server
+## Microsoft SQL Server
 Microsoft SQL Server is used as the primary data source and transformation layer for this project. Raw operational data from the Fleet Management System (FMS) is stored across multiple tables within the database.
 
 To support hourly production analysis, a SQL view was developed to:
@@ -40,9 +40,11 @@ To support hourly production analysis, a SQL view was developed to:
 - Aggregate data at an hourly granularity
 - Standardize fields and calculations for consistent reporting
 
-The SQL view serves as a single source of truth for downstream analytics and reporting, ensuring data accuracy, performance, and reusability when consumed by Power BI Dataflows and reports.
+<img alt="sql-view" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Production_Performance/tmp_fa3e1604-08b9-4a0c-947b-d09d09889d61.png">
 
-## 📊 Power BI
+The [SQL view](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Production_Performance/tmp_fa3e1604-08b9-4a0c-947b-d09d09889d61.png) serves as a single source of truth for downstream analytics and reporting, ensuring data accuracy, performance, and reusability when consumed by Power BI Dataflows and reports.
+
+## Power BI
 Power BI was used for data modeling, visualization, and business insights delivery.
 
 Key activities include:
@@ -52,4 +54,6 @@ Key activities include:
 - Designing interactive dashboards with filters and slicers
 - Visualizing key performance indicators (KPIs) and trends
 
-The final dashboard provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
+<img alt="sql-view" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Production_Performance/tmp_e54357bd-42f3-4b7a-a431-be0c6608695e.png">
+
+The final [dashboard](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Production_Performance/hourly_production_performance.pbix) provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
