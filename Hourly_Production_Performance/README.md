@@ -6,11 +6,11 @@ The objective of this project is to develop a Power BI report that visualizes ho
 This report serves as a monitoring tool to evaluate the production performance of loading units and hauling units, enabling timely operational control and performance analysis.
 
 ## Table of Content
-[Dataset](Dataset)
-[Technologies](Technologies)
-Data Pipeline
-SQL
-Power BI
+- [Dataset](#dataset)
+- [Technologies](#technologies)
+- [Data Pipeline](#data-pipeline)
+- [Microsoft SQL Server](#microsoft-sql-server)
+- [Power BI](#power-bi)
 
 ## Dataset
 The dataset used in this project is derived from proprietary Fleet Management System (FMS) data and is subject to company confidentiality restrictions. As such, the data is not shared publicly in this repository.
@@ -32,4 +32,24 @@ graph LR;
     PowerBIReport --> PowerBIService[Power BI Service];
 ```
 
-## SQL Server
+## 💾 Microsoft SQL Server
+Microsoft SQL Server is used as the primary data source and transformation layer for this project. Raw operational data from the Fleet Management System (FMS) is stored across multiple tables within the database.
+
+To support hourly production analysis, a SQL view was developed to:
+- Join multiple operational tables (haul cycle, equipment status)
+- Aggregate data at an hourly granularity
+- Standardize fields and calculations for consistent reporting
+
+The SQL view serves as a single source of truth for downstream analytics and reporting, ensuring data accuracy, performance, and reusability when consumed by Power BI Dataflows and reports.
+
+## 📊 Power BI
+Power BI was used for data modeling, visualization, and business insights delivery.
+
+Key activities include:
+- Importing and modeling data from SQL Server
+- Creating relationships and a star schema data model
+- Developing calculated measures using DAX
+- Designing interactive dashboards with filters and slicers
+- Visualizing key performance indicators (KPIs) and trends
+
+The final dashboard provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
