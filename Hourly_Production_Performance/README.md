@@ -54,6 +54,6 @@ Key activities include:
 - Designing interactive dashboards with filters and slicers
 - Visualizing key performance indicators (KPIs) and trends
 
-<img alt="sql-view" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Production_Performance/tmp_e54357bd-42f3-4b7a-a431-be0c6608695e.png">
+<img alt="pbi-report" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Production_Performance/tmp_acc62f6b-d26d-4a63-9145-9efcb622d3d1.png">
 
 The final [dashboard](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Production_Performance/hourly_production_performance.pbix) provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
