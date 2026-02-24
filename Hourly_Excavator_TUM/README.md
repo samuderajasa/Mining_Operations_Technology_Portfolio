@@ -48,9 +48,9 @@ To support time usage analysis, a SQL view was developed to:
 - Aggregate data at an hourly granularity
 - Standardize fields and calculations for consistent reporting
 
-<img alt="sql-view" src="image-link">
+<img alt="sql-view" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Excavator_TUM/hourly_excavator_tum_sql.png">
 
-The [SQL view](link-to-sql-file) serves as a single source of truth for downstream analytics and reporting, ensuring data accuracy, performance, and reusability when consumed by Power BI Dataflows and reports.
+The [SQL view](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Excavator_TUM/hourly_excavator_tum.sql) serves as a single source of truth for downstream analytics and reporting, ensuring data accuracy, performance, and reusability when consumed by Power BI Dataflows and reports.
 
 ## Power BI
 Power BI was used for data modeling, visualization, and business insights delivery.
@@ -61,6 +61,6 @@ Key activities include:
 - Developing calculated measures using DAX
 - Designing interactive dashboards with filters and slicers
 
-<img alt="pbi-report" src="image-link">
+<img alt="pbi-report" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Excavator_TUM/hourly_excavator_tum_pbi.png">
 
-The final [dashboard](link-to-pbi-file) provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
+The final [dashboard](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Hourly_Excavator_TUM/hourly_excavator_tum.pbix) provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
