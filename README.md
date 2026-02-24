@@ -16,5 +16,4 @@ The role also supports daily production monitoring and dispatch using Fleet Mana
 |---|---|---|---|
 | [Hourly Production Performance](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/tree/master/Hourly_Production_Performance) | March 2025 | Microsoft SQL Server, Power BI | Visualizes hourly excavator overburden production performance by presenting key metrics such as total production, productivity, working time, loading time, hanging time, spotting time, queueing time, and truck speed. |
 | [Hourly Excavator TUM](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/tree/master/Hourly_Excavator_TUM) | March 2025 | Microsoft SQL Server, Power BI | Visualizes hourly excavator Time Usage Model (TUM) by categorizing time into primary & secondary working time, internal and external operation delays, downtime, and non-rostered time. |
-
-
+| [Daily_Payload_Distribution](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/tree/master/Daily_Payload_Distribution) | Dec 2025 | Microsoft SQL Server, Power BI | Visualizes distribution of payload by categorizing into underload, overload, in-range, lower-range, and upper-range categories|
