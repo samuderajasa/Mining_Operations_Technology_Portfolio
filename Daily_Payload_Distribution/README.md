@@ -3,7 +3,7 @@
 ## Objective
 The objective of this project is to visualize daily payload distribution by categorizing payload performance into underload, overload, in-range, lower-range, and upper-range categories. The report presents payload distribution using tables and histogram charts, along with the corresponding actual payload values (tons).
 
-This visualization supports monitoring of loading consistency, payload compliance, and opportunities to improve hauling efficiency and operational performance.
+**This visualization supports monitoring of loading consistency, payload compliance, and opportunities to improve hauling efficiency and operational performance.**
 
 ## Table of Content
 - [Dataset](#dataset)
@@ -13,7 +13,7 @@ This visualization supports monitoring of loading consistency, payload complianc
 - [Power BI](#power-bi)
 
 ## Dataset
-The dataset used in this project is derived from proprietary Fleet Management System (FMS) data and is subject to company confidentiality restrictions. As such, the data is not shared publicly in this repository.
+The dataset used in this project is derived from proprietary **Fleet Management System (FMS) data** and is subject to company confidentiality restrictions. As such, the data is not shared publicly in this repository.
 
 ## Technologies
 The following technologies were used to build this project:
@@ -35,7 +35,7 @@ graph LR;
 ## Microsoft SQL Server
 Microsoft SQL Server is used as the primary data source and transformation layer for this project. Raw operational data from the Fleet Management System (FMS) is stored across multiple tables within the database.
 
-To support time usage analysis, a SQL view was developed to:
+To support payload distribution analysis, a SQL view was developed to:
 
 - Join multiple operational tables (haul cycle trans, equip, status trans)
 - Aggregate data at an hourly granularity
@@ -55,6 +55,36 @@ Key activities include:
 - Designing interactive dashboards with filters and slicers
 
 <img alt="pbi-report" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Daily_Payload_Distribution/daily_payload_distribution_pbi.png">
+
+### Report Logic:
+- The tables use a **Matrix visual** to display payload distribution percentages from in-range to upper-range categories based on load count.
+    - Rows: [Digger]
+    - Columns: [payload_range]
+    - Values : %RT sum of [load_count]
+- Payload_Axis_777 and Payload_Axis_785 is a **generated table** created using the following formula:
+    
+    ```sh
+    Payload_Axis_777 = GENERATESERIES(70, 140, 0.1)
+    ```
+
+   ```sh
+    Payload_Axis_785 = GENERATESERIES(110, 200, 0.1)
+    ```
+   
+    - Distribution Curve 777 and Distribution Curve 785 is a **calculated column** defined as:
+  
+        ```sh
+        Distribution Curve 777 = NORM.DIST('Payload_Axis_777'[Value], 108, 10, FALSE)
+        ```
+
+        ```sh
+        Distribution Curve 785 = NORM.DIST('Payload_Axis_785'[Value], 158, 11, FALSE)
+        ```
+
+- The distribution charts are built using a **Line and Clustered Column Chart**, consisting of:
+    - X-axis: Value (binned from Payload_Axis_777 with a bin size of 5)
+    - Column Y-axis: Count of hauling unit payload (binned with a bin size of 5)
+    - Line Y-axis: Average of Distribution Curve 777
 
 The final [dashboard]() provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
 
