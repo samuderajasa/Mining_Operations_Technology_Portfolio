@@ -54,7 +54,7 @@ Key activities include:
 - Developing calculated measures using DAX
 - Designing interactive dashboards with filters and slicers
 
-<img alt="pbi-report" src="">
+<img alt="pbi-report" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Daily_Payload_Distribution/daily_payload_distribution_pbi.png">
 
 The final [dashboard]() provides an overview of key metrics and enables users to explore the data interactively to support data-driven decision making.
 
