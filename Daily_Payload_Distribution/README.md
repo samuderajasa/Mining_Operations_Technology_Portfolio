@@ -43,7 +43,7 @@ To support time usage analysis, a SQL view was developed to:
 
 <img alt="sql-view" src="https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Daily_Payload_Distribution/payload_type_truck.png">
 
-The [SQL view](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Daily_Payload_Distribution/payload_type_truck.sql) serves as a single source of truth for downstream analytics and reporting, ensuring data accuracy, performance, and reusability when consumed by Power BI Dataflows and reports.
+The [SQL view](https://github.com/samuderajasa/Mining_Operations_Technology_Portfolio/blob/master/Daily_Payload_Distribution/payload_truck_type.sql) serves as a single source of truth for downstream analytics and reporting, ensuring data accuracy, performance, and reusability when consumed by Power BI Dataflows and reports.
 
 ## Power BI
 Power BI was used for data modeling, visualization, and business insights delivery.
